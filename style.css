@@ -1,0 +1,875 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.portfoliowebsiteoverflow{
+    overflow: auto;
+}
+
+.portfolio{
+    overflow: hidden;
+}
+
+/*  */
+.firstpage {
+    height: 100vh;
+}
+
+.secondpage {
+    /* border: solid; */
+    background-color: rgb(204, 211, 211);
+    border-radius: 50px;
+}
+
+.smallheading,
+#pfp,
+.skillbox,
+.highlightwebdev {
+    animation: cssscroll 1s;
+}
+
+/*  */
+
+/* Animation */
+@keyframes cssscroll {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY((0));
+    }
+}
+
+/* Animation ends */
+
+/* Navbar Starts*/
+header {
+    position: sticky;
+    top: 1rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.navcontainer {
+    margin-top: 1rem;
+}
+
+.navcontainer>ul {
+    display: inline-flex;
+    gap: 2.5rem;
+    padding: 25px 35px;
+    border-radius: 2.4rem;
+    box-shadow: 0px 3px 10px rgb(195, 192, 192);
+    background-color: white;
+}
+
+ul li {
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    -webkit-tap-highlight-color: transparent;
+}
+
+li :hover {
+    background-color: rgb(241, 241, 241);
+    padding: 15px 21px;
+    border-radius: 25px;
+    margin: -15px -21px;
+}
+
+/* Navbar Ends here*/
+
+/* Main heading starts */
+.heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
+h1 {
+    font-family: "Kanit", sans-serif;
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-family: "Kanit", sans-serif;
+    font-size: 3rem;
+}
+
+.Typing {
+    color: rgb(0, 140, 255);
+}
+
+/* Main heading ends */
+
+.smallheading {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+/* Pfp Starts*/
+.pfp {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#pfp {
+    border-radius: 50%;
+    width: 250px;
+}
+
+/* Pfp Ends */
+
+/* skill section starts  */
+/* Skill box layout starts */
+.skillbox {
+    height: 240px;
+    width: 280px;
+    /* border: solid; */
+    background-color: rgb(239, 237, 237);
+    border-radius: 35px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skillbox:hover {
+    transform: scale(1.03);
+}
+
+.skill {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    grid-template-rows: 230px 230px;
+    gap: 1.2rem;
+    align-content: center;
+    justify-content: center;
+    /* border: solid yellow; */
+    width: 1100px;
+}
+
+/* Skill box layout Ends */
+
+/* Skills section Heading */
+.forh2 {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.forh2 h2 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    background-color: rgb(239, 237, 237);
+    border-radius: 35px;
+    padding: 10px 25px;
+    margin-top: 5px;
+}
+
+/* Skills section Heading */
+
+/* Skills Section content Starts*/
+.html img {
+    height: 60px;
+    width: 60px;
+    margin-top: 45px;
+}
+
+.img {
+    text-align: center;
+}
+
+.skilltext {
+    padding: 30px 40px;
+    padding-top: 25px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Skills Section content Ends*/
+
+/* Skillsection whole layout starts*/
+.skillcontainer {
+    display: flex;
+    /* border: solid green; */
+    justify-content: center;
+}
+
+.highlightwebdev {
+    height: 280px;
+    width: 400px;
+    align-self: center;
+    background-color: rgb(239, 237, 237);
+    border-radius: 35px;
+    margin-left: 15px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    /* border: solid red; */
+}
+
+.highlightwebdev:hover {
+    transform: scale(1.05);
+}
+
+/* Skillsection whole layout Ends*/
+
+/* Skillsection whole layout Content starts*/
+.frontendimg {
+    text-align: center;
+}
+
+.frontendimg img {
+    height: 60px;
+    width: 60px;
+    margin-top: 35px;
+}
+
+.frontendtext {
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+
+.fronendptext {
+    text-align: center;
+    padding: 30px 40px;
+    font-family: "Nunito", sans-serif;
+    padding-top: 22px;
+}
+
+/* Skillsection whole layout content Ends*/
+/* skill section ends */
+
+/* Icons Sections starts */
+.iconscontainers { 
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1px;
+    margin-top: 30vh;
+}
+
+.iconscontainers img {
+    height: 55px;
+    transition: transform 1s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.iconscontainers img:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+/* Icons Sections Ends */
+
+/* Form sections starts */
+.headingforform {
+    text-align: center;
+}
+
+.headingforform>h3 {
+    font-family: "Kanit", sans-serif;
+    font-size: 2rem;
+}
+
+.formemailandname {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.message {
+    margin-top: 2rem;
+}
+
+.messageflex {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+}
+
+#fname,
+#femail {
+    border-radius: 12px;
+    width: 18rem;
+    height: 3.5rem;
+    padding-left: 15px;
+    border: rgb(210, 210, 210) solid 1px;
+    font-size: 20px;
+}
+
+.messagetextarea {
+    border-radius: 12px;
+    padding-left: 15px;
+    border: rgb(210, 210, 210) solid 1px;
+    font-size: 20px;
+    width: 39rem;
+    height: 12rem;
+    padding-top: 30px;
+}
+
+.formforportfolioflex {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+    margin-bottom: 100px;
+}
+
+#fname::placeholder,
+#femail::placeholder,
+.messagetextarea::placeholder {
+    color: rgb(158, 157, 157);
+}
+
+.submitform {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.submitform>input {
+    color: white;
+    background-color: black;
+    height: 4rem;
+    width: 9rem;
+    border-radius: 35px;
+    border: transparent;
+    font-size: 1.4rem;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Work box starts */
+.workboxcontainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workFirstBoxContainer {
+    height: 530px;
+    width: 85vw;
+    display: flex;
+    background-color: rgb(232, 231, 231);
+    border-radius: 54px;
+    transition: transform 0.7s ease-in-out;
+    margin-top: 50vh;
+}
+
+.workFirstBoxContainer:hover {
+    transform: scale(1.015);
+}
+
+.calculatorpic {
+    /* border: solid blue; */
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    border-radius: 54px;
+}
+
+.calculatorpic>img {
+    height: 480px;
+    border-radius: 15px;
+}
+
+.calculatorpic>video {
+    height: 480px;
+    border-radius: 15px;
+}
+
+.calculatortext {
+    width: 65%;
+}
+
+.headingforcalculatorproject {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-size: 2rem;
+    padding: 0px 125px;
+    margin-top: 70px;
+}
+
+.textofcalculatorbox {
+    /* border: solid; */
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    padding: 0px 145px;
+    font-size: 0.77rem;
+    margin-top: 25px;
+}
+
+.stack-used {
+    /* border: solid; */
+    text-align: center;
+    height: 90px;
+    margin-top: 25px;
+}
+
+.stack-used img {
+    height: 55px;
+    padding: 0px 10px;
+    padding-top: 10px;
+}
+
+.stack-used>h4 {
+    font-family: "Kanit", sans-serif;
+}
+
+.calculatorworkbuttoncontainer {
+    /* border: solid; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calculatorworkbutton {
+    /* border: solid; */
+    margin-right: 100px;
+}
+
+.labelforcalculatorproject {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.9rem;
+    padding-left: 8px;
+}
+
+.calculatorworkbutton button {
+    height: 50px;
+    width: 140px;
+    border-radius: 50px;
+    margin-top: 10px;
+    border: transparent;
+    font-size: 1.1rem;
+    background-color: rgb(0, 89, 255);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: 0.3s;
+}
+
+.calculatorworkbutton button:hover {
+    background-color: rgb(21, 21, 239);
+}
+
+
+/* Responsiveness */
+@media screen and (max-width:1024px) {
+    h1 {
+        font-size: 2.9rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    .pfp {
+        margin-top: 2.5rem;
+    }
+
+    #pfp {
+        width: 220px;
+    }
+
+    .skillcontainer {
+        /* border: solid red; */
+        flex-direction: column;
+    }
+
+    .skill {
+        /* border: yellow solid; */
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 245px 245px 245px;
+        height: 850px;
+        width: 100%;
+    }
+
+    .skillbox {
+        height: 245px;
+        width: 300px;
+    }
+
+    .highlightwebdev {
+        height: 250px;
+        width: 420px;
+        margin-left: 0px;
+    }
+
+    .forh2 h2 {
+        font-size: 1.8rem;
+        padding: 8px 25px;
+    }
+
+    .forh2 {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .html img {
+        height: 50px;
+        width: 50px;
+        margin-top: 35px;
+    }
+
+    .skilltext {
+        padding-top: 20px;
+    }
+
+    .fronendptext {
+        padding-top: 10px
+    }
+
+    .frontendimg img {
+        height: 50px;
+        width: 50px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .calculatortext {
+        width: 60%;
+    }
+
+    .calculatorpic {
+        width: 40%;
+    }
+
+    .headingforcalculatorproject {
+        font-size: 1.2rem;
+        padding: 10px 65px;
+        background-color: rgb(244, 244, 244);
+    }
+
+    .calculatorpic>img {
+        height: 420px;
+    }
+
+    .calculatorpic>video {
+        height: 420px;
+    }
+
+    .textofcalculatorbox {
+        padding: 0px 80px;
+        font-size: 0.65rem;
+        margin-top: 25px;
+    }
+
+    .workFirstBoxContainer {
+        height: 480px;
+        width: 90vw;
+    }
+
+    .stack-used img {
+        height: 48px;
+        padding: 0px 5px;
+        padding-top: 10px;
+    }
+
+    .labelforcalculatorproject {
+        font-family: "Nunito", sans-serif;
+        font-size: 0.77rem;
+        padding-left: 8px;
+    }
+
+    .calculatorworkbutton button {
+        height: 45px;
+        width: 120px;
+    }
+
+    .calculatorworkbutton {
+        margin-top: 5px;
+        margin-right: 70px;
+    }
+}
+
+
+@media screen and (max-width:640px) {
+
+    #fname,
+    #femail {
+        width: 16rem;
+        font-size: 18px;
+    }
+
+    .messagetextarea {
+        width: 35rem;
+    }
+
+    .submitform>input {
+        height: 3.5rem;
+        width: 8rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .firstpage {
+        height: 90vh;
+    }
+
+    .navcontainer>ul {
+        gap: 1.1rem;
+        padding: 20px 15px;
+    }
+
+    li a {
+        font-size: 0.95rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .heading {
+        margin-top: 5rem;
+    }
+
+    .smallheading {
+        font-size: 0.85rem;
+        margin-top: 1rem;
+    }
+
+    #pfp {
+        width: 200px;
+    }
+
+    a:hover {
+        padding: 15px 6px;
+        border-radius: 25px;
+        margin: -15px -6px;
+    }
+
+    .skillcontainer {
+        /* border: solid red; */
+        flex-direction: column;
+    }
+
+    .skill {
+        /* border: yellow solid; */
+        grid-template-columns: 350px;
+        grid-template-rows: 220px 220px 220px 220px 220px 220px;
+        height: 1470px;
+        width: 100%;
+    }
+
+    .skillbox {
+        height: 220px;
+        width: 350px;
+        border-radius: 35px;
+    }
+
+    .highlightwebdev {
+        width: 368px;
+        border-radius: 35px;
+    }
+
+    .forh2 {
+        margin-top: 135px;
+    }
+
+    .forh2 h2 {
+        font-size: 1.4rem;
+        margin-top: 0px;
+    }
+
+    #fname,
+    #femail {
+        width: 9.5rem;
+        font-size: 12px;
+        height: 2.9rem;
+    }
+
+    .messagetextarea {
+        width: 21rem;
+        font-size: 12px;
+    }
+
+    .submitform>input {
+        height: 3.2rem;
+        width: 7rem;
+        font-size: 1.2rem;
+    }
+
+    .formemailandname {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .iconscontainers {
+        gap: 1rem;
+        margin-top: 100px;
+    }
+
+    .iconscontainers img {
+        height: 45px;
+    }
+
+    .workFirstBoxContainer {
+        height: 700px;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        margin-top: 30vh;
+    }
+
+    .secondbox{
+        margin-top: 80px;
+    }
+
+    .calculatorpic {
+        width: 35%;
+        margin-top: 36px;
+    }
+
+    .calculatorpic>img {
+        height: 380px;
+        border-radius: 12px;
+    }
+    .calculatorpic>video {
+        height: 380px;
+        border-radius: 12px;
+    }
+
+    .calculatortext {
+        width: 65%;
+    }
+
+    .headingforcalculatorproject {
+        font-size: 1rem;
+        padding: 0px 6px;
+        margin-top: 15px;
+        background-color: rgb(232, 231, 231);
+    }
+
+    .textofcalculatorbox {
+        padding: 0px 5px;
+        font-size: 0.6rem;
+        margin-top: 10px;
+    }
+
+    .stack-used {
+        /* border: solid; */
+        text-align: center;
+        height: 90px;
+        margin-top: 5px;
+    }
+
+    .stack-used img {
+        height: 55px;
+        padding: 0px 10px;
+        padding-top: 10px;
+    }
+
+    .stack-used>h4 {
+        font-size: 0.85rem;
+    }
+
+    .stack-used img {
+        height: 22px;
+        padding: 0px 4px;
+        margin-top: 5px;
+    }
+
+    .forphoneresponsive {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        gap: 35px;
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .calculatorworkbuttoncontainer {
+        display: block;
+        text-align: center;
+    }
+
+    .calculatorworkbutton {
+        margin-right: 0px;
+    }
+
+    .labelforcalculatorproject {
+        font-family: "Nunito", sans-serif;
+        font-size: 0.6rem;
+        padding-left: 0px;
+    }
+
+    .calculatorworkbutton button {
+        height: 45px;
+        width: 100px;
+        border-radius: 70px;
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width:415px) {
+    .firstpage {
+        height: 90vh;
+    }
+
+    .navcontainer>ul {
+        gap: 1rem;
+        padding: 20px 18px;
+    }
+
+    li a {
+        font-size: 0.85rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .heading {
+        margin-top: 4rem;
+    }
+
+    .smallheading {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    #pfp {
+        width: 170px;
+    }
+
+    .pfp {
+        margin-top: 1.75rem;
+    }
+}
