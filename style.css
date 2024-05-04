@@ -655,7 +655,7 @@ label {
 
 @media screen and (max-width:450px) {
     .firstpage {
-        height:5vh;
+        height:70vh;
     }
 
     .navcontainer>ul {
@@ -868,7 +868,7 @@ label {
 
 @media screen and (max-width:415px) {
     .firstpage {
-        height: 5vh;
+        height: 70vh;
     }
 
     .navcontainer>ul {
