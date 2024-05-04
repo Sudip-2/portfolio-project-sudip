@@ -23,7 +23,7 @@ html {
 
 .secondpage {
     /* border: solid; */
-    background-color: rgb(204, 211, 211);
+    background-color: rgb(222, 223, 223);
     border-radius: 50px;
 }
 
@@ -143,7 +143,7 @@ h2 {
     height: 240px;
     width: 280px;
     /* border: solid; */
-    background-color: rgb(239, 237, 237);
+    background-color: rgb(243, 243, 243);
     border-radius: 35px;
     position: relative;
     transition: transform 0.3s ease-in-out;
@@ -154,15 +154,16 @@ h2 {
 }
 
 .skill {
-    height: 90vh;
+    height: 600px;
     display: grid;
     grid-template-columns: 280px 280px 280px;
-    grid-template-rows: 230px 230px;
+    grid-template-rows: 240px 240px;
     gap: 1.2rem;
     align-content: center;
     justify-content: center;
     /* border: solid yellow; */
-    width: 1100px;
+    width: 900px;
+    margin-right: 15px;
 }
 
 /* Skill box layout Ends */
@@ -210,7 +211,8 @@ h2 {
 .skillcontainer {
     display: flex;
     /* border: solid green; */
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 .highlightwebdev {
@@ -219,7 +221,7 @@ h2 {
     align-self: center;
     background-color: rgb(239, 237, 237);
     border-radius: 35px;
-    margin-left: 15px;
+    margin-left: 10px;
     position: relative;
     transition: transform 0.3s ease-in-out;
     /* border: solid red; */
@@ -632,7 +634,7 @@ label {
 
 @media screen and (max-width:450px) {
     .firstpage {
-        height: 90vh;
+        height: 80vh;
     }
 
     .navcontainer>ul {
@@ -660,11 +662,27 @@ label {
         font-size: 0.85rem;
         margin-top: 1rem;
     }
-
+    
+    .pfp {
+        margin-top: 6rem;
+    }
+    
     #pfp {
-        width: 200px;
+        width: 220px;
+        animation: animatepfptwo 5s ease-in-out infinite;
     }
 
+    @keyframes animatepfptwo {
+       0%,100%{
+        border-radius: 39% 61% 41% 59% / 27% 31% 69% 73% ;
+       } 
+       25%{
+        border-radius: 50% 50% 53% 47% / 54% 31% 69% 46% ;
+       }
+       50%{
+        border-radius: 71% 29% 33% 67% / 61% 45% 55% 39% ;
+       }
+    }
     a:hover {
         padding: 15px 6px;
         border-radius: 25px;
