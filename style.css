@@ -655,7 +655,7 @@ label {
 
 @media screen and (max-width:450px) {
     .firstpage {
-        height:68vh;
+        height:5vh;
     }
 
     .navcontainer>ul {
@@ -685,11 +685,11 @@ label {
     }
 
     .pfp {
-        margin-top: 5rem;
+        margin-top: 5.5rem;
     }
 
     #pfp {
-        width: 200px;
+        width: 210px;
     }
 
     a:hover {
@@ -868,7 +868,7 @@ label {
 
 @media screen and (max-width:415px) {
     .firstpage {
-        height: 68vh;
+        height: 5vh;
     }
 
     .navcontainer>ul {
