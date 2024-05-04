@@ -8,11 +8,11 @@ html {
     scroll-behavior: smooth;
 }
 
-.portfoliowebsiteoverflow{
+.portfoliowebsiteoverflow {
     overflow: auto;
 }
 
-.portfolio{
+.portfolio {
     overflow: hidden;
 }
 
@@ -25,6 +25,7 @@ html {
     /* border: solid; */
     background-color: rgb(222, 223, 223);
     border-radius: 50px;
+    /* height: 100vh; */
 }
 
 .smallheading,
@@ -131,8 +132,28 @@ h2 {
 }
 
 #pfp {
-    border-radius: 50%;
     width: 250px;
+    animation: animatepfptwo 5s ease-in-out infinite;
+}
+
+@keyframes animatepfptwo {
+
+    0%,
+    100% {
+        border-radius: 39% 61% 41% 59% / 27% 31% 69% 73%;
+    }
+
+    25% {
+        border-radius: 50% 50% 53% 47% / 54% 31% 69% 46%;
+    }
+
+    50% {
+        border-radius: 71% 29% 33% 67% / 61% 45% 55% 39%;
+    }
+
+    75% {
+        border-radius: 34% 66% 60% 40% / 61% 45% 55% 39%;
+    }
 }
 
 /* Pfp Ends */
@@ -260,7 +281,7 @@ h2 {
 /* skill section ends */
 
 /* Icons Sections starts */
-.iconscontainers { 
+.iconscontainers {
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -634,7 +655,7 @@ label {
 
 @media screen and (max-width:450px) {
     .firstpage {
-        height: 80vh;
+        height:68vh;
     }
 
     .navcontainer>ul {
@@ -662,27 +683,15 @@ label {
         font-size: 0.85rem;
         margin-top: 1rem;
     }
-    
+
     .pfp {
-        margin-top: 6rem;
-    }
-    
-    #pfp {
-        width: 220px;
-        animation: animatepfptwo 5s ease-in-out infinite;
+        margin-top: 5rem;
     }
 
-    @keyframes animatepfptwo {
-       0%,100%{
-        border-radius: 39% 61% 41% 59% / 27% 31% 69% 73% ;
-       } 
-       25%{
-        border-radius: 50% 50% 53% 47% / 54% 31% 69% 46% ;
-       }
-       50%{
-        border-radius: 71% 29% 33% 67% / 61% 45% 55% 39% ;
-       }
+    #pfp {
+        width: 200px;
     }
+
     a:hover {
         padding: 15px 6px;
         border-radius: 25px;
@@ -764,7 +773,7 @@ label {
         margin-top: 30vh;
     }
 
-    .secondbox{
+    .secondbox {
         margin-top: 80px;
     }
 
@@ -777,6 +786,7 @@ label {
         height: 380px;
         border-radius: 12px;
     }
+
     .calculatorpic>video {
         height: 380px;
         border-radius: 12px;
@@ -858,7 +868,7 @@ label {
 
 @media screen and (max-width:415px) {
     .firstpage {
-        height: 90vh;
+        height: 68vh;
     }
 
     .navcontainer>ul {
@@ -884,10 +894,10 @@ label {
     }
 
     #pfp {
-        width: 170px;
+        width: 200px;
     }
 
     .pfp {
-        margin-top: 1.75rem;
+        margin-top: 5.5rem;
     }
 }
