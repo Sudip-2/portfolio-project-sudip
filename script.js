@@ -3,7 +3,7 @@ async function SendMail() {
   let Email = document.querySelector("#femail").value;
   let User_Message = document.querySelector("#usermessage").value;
   console.log(First_Name, Email, User_Message);
-  fetch("", {
+  fetch("https://main--clever-longma-9048d0.netlify.app/", {
     method: "POST",
     body: {
       name: First_Name,
