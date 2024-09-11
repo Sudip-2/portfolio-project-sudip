@@ -678,6 +678,8 @@ label {
 
     .heading {
         margin-top: 5rem;
+        text-align: left;
+        padding-left: 29px;
     }
 
     .smallheading {
