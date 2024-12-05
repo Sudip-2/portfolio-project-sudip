@@ -1,3 +1,4 @@
+let url = "https://personal-blog-site-zeta.vercel.app/"
 async function SendMail() {
   let First_Name = document.querySelector("#fname").value;
   let Email = document.querySelector("#femail").value;
@@ -10,7 +11,7 @@ async function SendMail() {
       message: User_Message,
     };
     let result = await fetch(
-      "https://main--clever-longma-9048d0.netlify.app/submit",
+      `${url}mail/sendmail`,
       {
         method: "POST",
         headers: {
@@ -19,8 +20,8 @@ async function SendMail() {
         body: JSON.stringify(Body_Object),
       }
     );
-    let Final_Result = await result.text();
-    alert(Final_Result);
+    let Final_Result = await result.json();
+    alert(Final_Result.message);
   } else {
     alert("Please Enter Proper Values To The Fields.");
   }
