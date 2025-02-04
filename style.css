@@ -595,7 +595,8 @@ label {
         width: 90%;
         height: 100%;
     }
-    .stackCont{
+
+    .stackCont {
         flex-wrap: wrap;
         /* border: solid; */
         width: 170px;
@@ -723,6 +724,28 @@ label {
     .submitform>input {
         height: 3.5rem;
         width: 8rem;
+    }
+
+    .imageCont {
+        width: 30px;
+        height: 30px;
+    }
+
+    .workbox {
+        grid-template-rows: 60% 40%;
+        /* border: solid; */
+    }
+
+    .workboxImg {
+        margin-top: 10px;
+    }
+
+    .workboxImg img {
+        width: 100%;
+        height: 100%;
+    }
+    .stackCont {
+        width: 110px;
     }
 }
 
@@ -929,14 +952,6 @@ label {
         font-family: "Nunito", sans-serif;
         font-size: 0.6rem;
         padding-left: 0px;
-    }
-
-    .calculatorworkbutton button {
-        height: 45px;
-        width: 100px;
-        border-radius: 70px;
-        margin-top: 10px;
-        font-size: 0.9rem;
     }
 
 }
