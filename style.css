@@ -424,6 +424,12 @@ label {
     border-radius: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+}
+
+.workbox:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .workboxImg {
@@ -584,6 +590,16 @@ label {
     .fronendptext {
         padding-top: 10px
     }
+
+    .workboxImg img {
+        width: 90%;
+        height: 100%;
+    }
+    .stackCont{
+        flex-wrap: wrap;
+        /* border: solid; */
+        width: 170px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -641,28 +657,9 @@ label {
         margin-top: 5px;
         margin-right: 70px;
     }
-}
-
-
-@media screen and (max-width:640px) {
-
-    #fname,
-    #femail {
-        width: 16rem;
-        font-size: 18px;
-    }
-
-    .messagetextarea {
-        width: 35rem;
-    }
-
-    .submitform>input {
-        height: 3.5rem;
-        width: 8rem;
-    }
 
     .workbox {
-        width: 95vw;
+        width: 92vw;
         height: 90svh;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 50%);
@@ -673,6 +670,11 @@ label {
         grid-column: 1;
         /* border: solid; */
         grid-row: 1/2;
+    }
+
+    .workboxImg img {
+        width: 100%;
+        height: 90%;
     }
 
     .workboxDesc {
@@ -702,6 +704,25 @@ label {
 
     .stackText {
         font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width:640px) {
+
+    #fname,
+    #femail {
+        width: 16rem;
+        font-size: 18px;
+    }
+
+    .messagetextarea {
+        width: 35rem;
+    }
+
+    .submitform>input {
+        height: 3.5rem;
+        width: 8rem;
     }
 }
 
@@ -810,7 +831,7 @@ label {
 
     .iconscontainers {
         gap: 1rem;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .iconscontainers img {
