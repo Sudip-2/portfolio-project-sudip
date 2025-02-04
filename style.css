@@ -179,7 +179,7 @@ h2 {
 .skill {
     height: 560px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
     align-content: center;
     justify-content: center;
@@ -220,15 +220,15 @@ h2 {
     text-align: center;
 }
 
-.imgContainer{
-    width:60px ;
-    height:60px ;
+.imgContainer {
+    width: 60px;
+    height: 60px;
     margin-top: 45px;
     margin-inline: auto;
     /* border: solid; */
 }
 
-.imgContainer img{
+.imgContainer img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -271,7 +271,7 @@ h2 {
 /* Skillsection whole layout Ends*/
 
 /* Skillsection whole layout Content starts*/
-.webdevpic{
+.webdevpic {
     height: 60px;
     width: 150px;
     margin-top: 35px;
@@ -415,121 +415,113 @@ label {
 }
 
 /* Work box starts */
-.workboxcontainer {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: solid; */
-    margin-top: 15vh;
-}
-
-.workFirstBoxContainer {
-    height: 530px;
+.workbox {
     width: 85vw;
-    display: flex;
-    background-color: rgb(232, 231, 231);
-    border-radius: 54px;
-    transition: transform 0.7s ease-in-out ,box-shadow 0.5s ease-in-out;
-}
-
-.workFirstBoxContainer:hover {
-    transform: scale(1.02);
-    box-shadow: 1px 0px 10px rgb(180, 180, 180);
-}
-
-.calculatorpic {
-    /* border: solid blue; */
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(242, 242, 242);
-    border-radius: 54px;
-}
-
-.calculatorpic>img {
-    height: 480px;
-    border-radius: 15px;
-}
-
-.calculatorpic>video {
-    height: 480px;
-    border-radius: 15px;
-}
-
-.calculatortext {
-    width: 65%;
-}
-
-.headingforcalculatorproject {
-    text-align: center;
-    font-family: "Kanit", sans-serif;
-    font-size: 2rem;
-    padding: 0px 125px;
-    margin-top: 70px;
-}
-
-.textofcalculatorbox {
-    /* border: solid; */
-    text-align: center;
-    font-family: "Nunito", sans-serif;
-    padding: 0px 145px;
-    font-size: 0.77rem;
-    margin-top: 25px;
-}
-
-.stack-used {
-    /* border: solid; */
-    text-align: center;
-    height: 90px;
-    margin-top: 25px;
-}
-
-.stack-used img {
-    height: 55px;
-    padding: 0px 10px;
-    padding-top: 10px;
-}
-
-.stack-used>h4 {
-    font-family: "Kanit", sans-serif;
-}
-
-.calculatorworkbuttoncontainer {
-    /* border: solid; */
-    display: flex;
-    justify-content: flex-end;
-}
-
-.calculatorworkbutton {
-    /* border: solid; */
-    margin-right: 100px;
-}
-
-.labelforcalculatorproject {
-    font-family: "Nunito", sans-serif;
-    font-size: 0.9rem;
-    padding-left: 8px;
-}
-
-.calculatorworkbutton button {
-    height: 50px;
-    width: 140px;
+    height: 90svh;
+    margin-inline: auto;
+    margin-top: 110px;
+    background-color: rgba(222, 222, 222, .4);
     border-radius: 50px;
-    margin-top: 10px;
-    border: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.workboxImg {
+    grid-column: 1/2;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workboxImg img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.workboxDesc {
+    /* border: solid; */
+    grid-column: 2/4;
+    border-radius: 50px;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.workboxDescCont {
+    /* border: solid; */
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.workHeading {
+    /* border: solid; */
+    font-size: 2.5rem;
+    max-width: 600px;
+}
+
+.workDesc {
+    /* border: solid; */
+    font-family: sans-serif;
+    max-width: 600px;
     font-size: 1.1rem;
-    background-color: rgb(41, 103, 218);
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.stackText {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+.stackCont {
+    /* border: solid; */
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.imageCont {
+    width: 50px;
+    height: 50px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.workDescBottom {
+    /* border: solid; */
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.workBoxBtn {
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: 0.3s;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    border: transparent;
+    background-color: rgb(0, 89, 255);
     color: white;
 }
 
-.calculatorworkbutton button:hover {
-    background-color: rgb(23, 89, 212);
+.workBoxBtn:hover {
+    background-color: rgb(44, 44, 240);
 }
 
 
@@ -668,11 +660,102 @@ label {
         height: 3.5rem;
         width: 8rem;
     }
+
+    .workbox {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        /* border: solid; */
+    }
+
+    .workboxImg {
+        grid-column: 1;
+        /* border: solid; */
+        grid-row: 1/2;
+    }
+
+    .workboxDesc {
+        grid-column: 1;
+        /* border: solid; */
+        grid-row: 2/3;
+    }
+
+    .workboxDescCont {
+        /* border: solid; */
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .workHeading {
+        /* border: solid; */
+        font-size: 1.7rem;
+        max-width: 600px;
+    }
+
+    .workDesc {
+        /* border: solid; */
+        font-family: sans-serif;
+        max-width: 600px;
+        font-size: 1rem;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+
+    .stackText {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.1rem;
+    }
+
+    .stackCont {
+        /* border: solid; */
+        display: flex;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    .imageCont {
+        width: 50px;
+        height: 50px;
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .workDescBottom {
+        /* border: solid; */
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .workBoxBtn {
+        cursor: pointer;
+        padding: 15px 25px;
+        font-size: 1.1rem;
+        border-radius: 25px;
+        border: transparent;
+        background-color: rgb(0, 89, 255);
+        color: white;
+    }
+
+    .workBoxBtn:hover {
+        background-color: rgb(44, 44, 240);
+    }
 }
 
 @media screen and (max-width:450px) {
     .firstpage {
-        height:70svh;
+        height: 70svh;
     }
 
     .navcontainer>ul {
