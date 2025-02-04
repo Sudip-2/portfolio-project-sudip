@@ -681,12 +681,7 @@ label {
 
     .workboxDescCont {
         /* border: solid; */
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 5px;
     }
 
